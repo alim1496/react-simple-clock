@@ -1,0 +1,24 @@
+.rac-clock-body {
+	display: block;
+	position: relative;
+	border: 1px solid;
+	border-radius: 50%;
+}
+
+.rac-hour-body {
+	position: absolute;
+	inset: 5px;
+	text-align: center;
+}
+
+.rac-hand-wrapper {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.rac-clock-hand {
+	background-color: #000;
+	transform-origin: bottom;
+	position: absolute;
+}

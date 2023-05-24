@@ -1,0 +1,11 @@
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# component build
+/dist
+
+# misc
+.DS_Store
