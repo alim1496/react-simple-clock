@@ -5,6 +5,11 @@
 	border-radius: 50%;
 }
 
+.rac-mid-point {
+	background-color: #000;
+	border-radius: 50%;
+}
+
 .rac-hour-body {
 	position: absolute;
 	inset: 5px;
