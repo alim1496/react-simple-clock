@@ -43,9 +43,9 @@ const Clock = (props) => {
 			))}
 			<div className="rac-hand-wrapper" style={{ width: size, height: size/2 }}>
 				<div className="rac-mid-point" style={{ height: size/20, width: size/20, transform: `translateY(${size/40}px)` }}></div>
-				{live && <Hand height={4*size/10} handID="rac-second-hand" angle={second*6} />}
-				<Hand height={3*size/10} handID="rac-minute-hand" angle={minute*6+second/10} />
-				<Hand height={size/5} handID="rac-hour-hand" angle={hour*30+minute/2} />
+				{live && <Hand height={4*size/10} angle={second*6} />}
+				<Hand height={3*size/10} angle={minute*6+second/10} />
+				<Hand height={size/5} angle={hour*30+minute/2} />
 			</div>
 		</div>
 	)

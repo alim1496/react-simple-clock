@@ -1,4 +1,4 @@
-# react-awesome-clock
+# react-simple-clock
 
 This repository contains simple analog clock to be used in React applications. You can either use the live clock or set 
 your given time to see a stationary clock.

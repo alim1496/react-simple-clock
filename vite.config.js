@@ -6,8 +6,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/lib/index.jsx'),
-      name: 'react-awesome-clock',
-      fileName: (format) => `react-awesome-clock.${format}.js`
+      name: 'react-simple-clock',
+      fileName: (format) => `react-simple-clock.${format}.js`
     },
     rollupOptions: {
       external: ['react', 'react-dom'],

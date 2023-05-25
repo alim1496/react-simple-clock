@@ -1,5 +1,5 @@
 {
-	"name": "react-awesome-clock",
+	"name": "react-simple-clock",
 	"version": "1.0.0",
 	"description": "A react component to display clock",
 	"license": "MIT",
@@ -12,12 +12,12 @@
 		"dist",
 		"README.md"
 	],
-	"main": "./dist/react-awesome-clock.umd.js",
-	"module": "./dist/react-awesome-clock.es.js",
+	"main": "./dist/react-simple-clock.umd.js",
+	"module": "./dist/react-simple-clock.es.js",
 	"exports": {
 		".": {
-			"import": "./dist/react-awesome-clock.es.js",
-			"require": "./dist/react-awesome-clock.umd.js"
+			"import": "./dist/react-simple-clock.es.js",
+			"require": "./dist/react-simple-clock.umd.js"
 		}
 	},
 	"scripts": {
