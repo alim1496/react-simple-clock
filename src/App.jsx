@@ -17,7 +17,7 @@ const App = () => {
 			<input type="checkbox" checked={live} onChange={(e) => setLive(e.target.checked)} />
 			<label>live</label>
 			<br /><br /><br />
-			<Clock hourFormat="number" hourValue={hour} minuteValue={minute} live={live} />
+			<Clock hourMarkFormat="number" hourValue={hour} minuteValue={minute} live={live} className="clock-body" mode="dark" />
 		</div>
 	)
 }

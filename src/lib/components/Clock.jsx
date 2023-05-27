@@ -5,7 +5,7 @@ import HourMark from "./HourMark"
 import Hand from "./Hand"
 
 const Clock = (props) => {
-	const { hourValue, minuteValue, size = 200, borderColor = "#000", borderWidth = 5, hourFormat, live } = props
+	const { hourValue, minuteValue, size = 200, hourMarkFormat, live, className, mode = "light" } = props
 	const hours = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 	const romans = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII"]
 
@@ -32,20 +32,21 @@ const Clock = (props) => {
 	}, [live, minuteValue, hourValue])
 
 	return (
-		<div style={{ width: size, height: size, borderColor, borderWidth }} className="rac-clock-body">
+		<div style={{ width: size, height: size }} className={`rac-clock-body ${className}`}>
 			{hours.map((hour, index) => (
 				<HourMark
 					key={index} 
-					value={hourFormat === "number" ? hour : romans[hour]} 
+					value={hourMarkFormat === "number" ? hour : romans[hour]} 
 					angle={hour * 30} 
-					format={hourFormat} 
+					format={hourMarkFormat}
+					_mode={mode}
 				/>
 			))}
 			<div className="rac-hand-wrapper" style={{ width: size, height: size/2 }}>
-				<div className="rac-mid-point" style={{ height: size/20, width: size/20, transform: `translateY(${size/40}px)` }}></div>
-				{live && <Hand height={4*size/10} angle={second*6} />}
-				<Hand height={3*size/10} angle={minute*6+second/10} />
-				<Hand height={size/5} angle={hour*30+minute/2} />
+				<div className={`rac-mid-point bg-${mode}`} style={{ height: size/20, width: size/20, transform: `translateY(${size/40}px)` }}></div>
+				{live && <Hand height={3.5*size/10} width={2} angle={second*6} _mode={mode} />}
+				<Hand height={3*size/10} width={4} angle={minute*6+second/10} _mode={mode} />
+				<Hand height={size/5} angle={hour*30+minute/2} _mode={mode} />
 			</div>
 		</div>
 	)
@@ -55,10 +56,10 @@ Clock.propTypes = {
 	hourValue: PropTypes.number,
 	minuteValue: PropTypes.number,
 	size: PropTypes.number,
-	borderColor: PropTypes.string,
-	borderWidth: PropTypes.number,
-	hourFormat: PropTypes.string,
-	live: PropTypes.bool
+	hourMarkFormat: PropTypes.string,
+	className: PropTypes.string,
+	live: PropTypes.bool,
+	mode: PropTypes.string
 }
 
 export default Clock

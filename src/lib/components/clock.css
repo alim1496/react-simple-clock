@@ -6,7 +6,6 @@
 }
 
 .rac-mid-point {
-	background-color: #000;
 	border-radius: 50%;
 }
 
@@ -23,7 +22,22 @@
 }
 
 .rac-clock-hand {
-	background-color: #000;
 	transform-origin: bottom;
 	position: absolute;
+}
+
+.bg-light {
+	background-color: #121214;
+}
+
+.bg-dark {
+	background-color: #DCDDDE;
+}
+
+.col-light {
+	color: #121214;
+}
+
+.col-dark {
+	color: #DCDDDE;
 }

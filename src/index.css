@@ -2,3 +2,9 @@
 	box-sizing: border-box;
 	padding: 20px;
 }
+
+.clock-body {
+	border-width: 5px !important;
+	border-color: rgb(0, 10, 25) !important;
+	background-color: rgba(2, 12, 15, 0.753);
+}
