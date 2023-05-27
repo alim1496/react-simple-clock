@@ -59,6 +59,18 @@ export default MyApp
 ```
 ![screenshot 3](images/darkClock.png)
 
+## Properties
+
+| Property         | Type     | Default Value | Description                                                                                                                    |
+|------------------|----------|---------------|--------------------------------------------------------------------------------------------------------------------------------|
+| `hourValue`      | number   | null          | The hour to show as output. No need to use if you want to show a live clock.                                                   |
+| `minuteValue`    | number   | null          | The minute to show as output. No need to use if you want to show a live clock.                                                 |
+| `size`           | number   | 200           | Size of the clock in `px`.                                                                                                     |
+| `hourMarkFormat` | string   | null          | In which formate the hour marks to be displayed. If you want to display number then use `number` or use `roman` to show roman. |
+| `className`      | string   | null          | Your customized styled class name. Try to use it for `background-color`, `border-color`, `background-width` etc.               |
+| `live`           | boolean  | false         | If `true` then a live clock with current time & second hand is displayed.                                                      |
+| `mode`           | string   | light         | If the mode is `light` then the theme is a light mode one otherwise use `dark` to display a dark theme.                        |
+
 ## To run in development
 
 ```bash
