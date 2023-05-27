@@ -3,6 +3,13 @@
 	padding: 20px;
 }
 
+/*
+.clock-body {
+	border-width: 5px !important;
+	border-color: rgb(6, 100, 240) !important;
+	background-color: rgba(212, 242, 251, 0.753);
+}*/
+
 .clock-body {
 	border-width: 5px !important;
 	border-color: rgb(0, 10, 25) !important;
