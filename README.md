@@ -1,13 +1,17 @@
 # react-simple-clock
 
 This repository contains simple analog clock to be used in React applications. You can either use the live clock or set 
-your given time to see a stationary clock.
+your given time to see a stationary clock. You can check the live demo [here](https://codesandbox.io/s/late-frog-1nxilo).
 
 ## Installation
 
 ### NPM
 ```sh
 npm install react-simple-clock
+```
+### YARN
+```sh
+yarn add react-simple-clock
 ```
 
 ## Usage
